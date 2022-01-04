@@ -18,4 +18,6 @@ def name_change():
 
     api.update_profile(name = f'うえとも@{day}日後までにエンジニア転職する')
 
-name_change()
+app = name_change()
+
+server = app.server
