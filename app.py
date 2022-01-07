@@ -14,9 +14,9 @@ def name_change():
     today = datetime.now()
 
     day = end_day - today
-    day = day.days + 1
+    day = day.days # + 1 HerokuがUTCしか選択できないので + 1 は無し
 
-    api.update_profile(name = f'うえとも@{day}日後までにエンジニア転職する')
+    api.update_profile(name = f'うえとも@{day}日後までにエンジニアに転職！')
 
 app = name_change()
 
