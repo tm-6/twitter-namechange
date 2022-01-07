@@ -1,8 +1,8 @@
 import tweepy
 from datetime import datetime
 
-auth = tweepy.OAuthHandler(API_Key, API_Key_Secret)
-auth.set_access_token(Access_Token, Access_Token_Secret)
+auth = tweepy.OAuthHandler('API_Key', 'API_Key_Secret')
+auth.set_access_token('Access_Token', 'Access_Token_Secret')
 api = tweepy.API(auth)
 
 def name_change():
