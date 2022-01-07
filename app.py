@@ -1,12 +1,8 @@
-import json
 import tweepy
 from datetime import datetime
 
-with open('secret.json') as f:
-    secret = json.load(f)
-
-auth = tweepy.OAuthHandler(secret['API_Key'], secret['API_Key_Secret'])
-auth.set_access_token(secret['Access_Token'], secret['Access_Token_Secret'])
+auth = tweepy.OAuthHandler(API_Key, API_Key_Secret)
+auth.set_access_token(Access_Token, Access_Token_Secret)
 api = tweepy.API(auth)
 
 def name_change():
